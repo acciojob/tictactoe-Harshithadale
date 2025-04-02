@@ -42,7 +42,10 @@ function checkWinner(item){
     for(let pattern of winnerPatterns){
         let val1= pattern[0], val2=pattern[1], val3 = pattern[2];
         if(boxes[val1].textContent && boxes[val1].textContent == boxes[val2].textContent && boxes[val2].textContent == boxes[val3].textContent){
-            return true
+            boxes[val1].style.backgroundColor="violet"
+			boxes[val2].style.backgroundColor="violet"
+			boxes[val3].style.backgroundColor="violet"
+			return true
         }   
     }
     return false
@@ -60,7 +63,6 @@ boxes.forEach((item, index) => {
         message.textContent = `${presentUser}, you're up`
         item.textContent = "x";
         isTurn0 = true;
-        item.style.backgroundColor = "blueviolet";
         let isWinner = checkWinner(item)
         if(isWinner){
             message.textContent = `${presentUser} congratulations you won!`
@@ -73,7 +75,6 @@ boxes.forEach((item, index) => {
         message.textContent = `${presentUser}, you're up`
         item.textContent = "o";
         isTurn0 = false;
-        item.style.backgroundColor = "blueviolet";
         let isWinner = checkWinner(item)
         if(isWinner){
             message.textContent = `${presentUser} congratulations you won!`
