@@ -65,6 +65,7 @@ boxes.forEach((item, index) => {
         isTurn0 = true;
         let isWinner = checkWinner(item)
         if(isWinner){
+			presentUser = user1
             message.textContent = `${presentUser} congratulations you won!`
             gameOver = true
         }
@@ -77,6 +78,7 @@ boxes.forEach((item, index) => {
         isTurn0 = false;
         let isWinner = checkWinner(item)
         if(isWinner){
+			presentUser = user2
             message.textContent = `${presentUser} congratulations you won!`
             gameOver = true
         }
