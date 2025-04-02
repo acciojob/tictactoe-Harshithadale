@@ -23,3 +23,9 @@ input{
 #subBtn{
 	margin:10px;
 }
+#mainDiv{
+	text-align:center;
+}
+.message{
+	font-weight:bold;
+}

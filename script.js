@@ -25,6 +25,7 @@ subBtn.onclick = () => {
   mainPage.style.display = "block";
   user1 = player1.value;
   user2 = player2.value;
+	message.textContent = `${user1}, you're up`
 };
 
 const winnerPatterns = [
@@ -55,7 +56,7 @@ boxes.forEach((item, index) => {
     function () {
     if (gameOver || item.textContent !== "") return; 
       if (!isTurn0) {
-        presentUser = user1;
+        presentUser = user2;
         message.textContent = `${presentUser}, you're up`
         item.textContent = "x";
         isTurn0 = true;
@@ -68,7 +69,7 @@ boxes.forEach((item, index) => {
 
         
       } else {
-        presentUser = user2;
+        presentUser = user1;
         message.textContent = `${presentUser}, you're up`
         item.textContent = "o";
         isTurn0 = false;
