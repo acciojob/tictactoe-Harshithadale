@@ -1,15 +1,15 @@
 //your JS code here. If required.
-const box1 = document.getElementById("box1");
-const box2 = document.getElementById("box2");
-const box3 = document.getElementById("box3");
-const box4 = document.getElementById("box4");
-const box5 = document.getElementById("box5");
-const box6 = document.getElementById("box6");
-const box7 = document.getElementById("box7");
-const box8 = document.getElementById("box8");
-const box9 = document.getElementById("box9");
-const player1 = document.getElementById("player1");
-const player2 = document.getElementById("player2");
+const box1 = document.getElementById("1");
+const box2 = document.getElementById("2");
+const box3 = document.getElementById("3");
+const box4 = document.getElementById("4");
+const box5 = document.getElementById("5");
+const box6 = document.getElementById("6");
+const box7 = document.getElementById("7");
+const box8 = document.getElementById("8");
+const box9 = document.getElementById("9");
+const player1 = document.getElementById("player-1");
+const player2 = document.getElementById("player-2");
 const mainPage = document.getElementById("mainPage");
 const loginForm = document.getElementById("login-form");
 const subBtn = document.getElementById("submit");
@@ -57,7 +57,7 @@ boxes.forEach((item, index) => {
       if (!isTurn0) {
         presentUser = user1;
         message.textContent = `${presentUser}, you're up`
-        item.textContent = "X";
+        item.textContent = "x";
         isTurn0 = true;
         item.style.backgroundColor = "blueviolet";
         let isWinner = checkWinner(item)
@@ -70,7 +70,7 @@ boxes.forEach((item, index) => {
       } else {
         presentUser = user2;
         message.textContent = `${presentUser}, you're up`
-        item.textContent = "O";
+        item.textContent = "o";
         isTurn0 = false;
         item.style.backgroundColor = "blueviolet";
         let isWinner = checkWinner(item)
