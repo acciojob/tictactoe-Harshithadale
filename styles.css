@@ -16,6 +16,10 @@ body{
     font-weight: bold;
 
 }
-input,button{
+input{
+	margin:10px;
+}
+
+#subBtn{
 	margin:10px;
 }
