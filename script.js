@@ -12,7 +12,7 @@ const player1 = document.getElementById("player1");
 const player2 = document.getElementById("player2");
 const mainPage = document.getElementById("mainPage");
 const loginForm = document.getElementById("login-form");
-const subBtn = document.getElementById("subBtn");
+const subBtn = document.getElementById("submit");
 const message = document.getElementById("message");
 const boxes = document.querySelectorAll(".box");
 let user1,user2;
