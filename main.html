@@ -5,10 +5,34 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+	<div id="login-form">
+		<h1>Tic Tac Toe</h1>
+        <label for="player-1">Player 1</label>
+        <input id="player-1" type="text" placeholder="enter name">
+        <br/>
+        <label for="player-2">Player 2</label>
+        <input id="player-2" type="text" placeholder="enter name">
+        <br/>
+        <button id="subBtn">Start Game</button>
+	</div>
+	<div id="mainPage" style="display: none;">
+		<h1>TIC TAC TOE</h1>
+		<p id="message"></p>
+		<div class="box-container">
+			<button class="box" id="box1"></button>
+			<button class="box" id="box2"></button>
+			<button class="box" id="box3"></button>
+			<button class="box" id="box4"></button>
+			<button class="box" id="box5"></button>
+			<button class="box" id="box6"></button>
+			<button class="box" id="box7"></button>
+			<button class="box" id="box8"></button>
+			<button class="box" id="box9"></button>
+		</div>
+	</div>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <script type="text/javascript" src="script.js">
 </script>
 
 </body>

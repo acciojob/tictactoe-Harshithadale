@@ -1,1 +1,21 @@
 /*  your css code here. If applicable */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box-container{
+	display:grid;
+	grid-template-columns:50px 50px 50px;
+	grid-template-rows:50px 50px 50px;
+}
+.box{
+    background-color: pink;
+    font-weight: bold;
+
+}
+input,button{
+	margin:10px;
+}
